@@ -15,6 +15,19 @@
   "oauth_scope": "public_repo",
   "scientific_snapshot_commit": "94eaed90c958f4fc1d5fb1bbbb485cb6ebdb6be5",
   "submission_editorial_status": "Open issue; no editorial acceptance or independent scientific review claimed.",
-  "issue_body_sha256": "9571583c8d55486b62987691b33b112150eb3d261d3462bb94bc1536f088bbb6",
-  "verification": "Posted issue body equals local source; public scientific snapshot downloaded anonymously and all manifest hashes verified."
+  "issue_body_sha256": "0c6757d571665bcce988f9ddbe46d9fd384cb653ed991c6d2496473e6de9acf8",
+  "verification": "Posted issue body equals local source; public scientific snapshot downloaded anonymously and all manifest hashes verified.",
+  "latest_release": "https://github.com/perseusabbot/microbiome-bias-calibration-biocat-68/releases/tag/v2.0.1",
+  "formatting_patch": {
+    "version": "2.0.1",
+    "date": "2026-10-17",
+    "changes": [
+      "Replace six unsupported operatorname commands with mathrm in four expressions.",
+      "Use fenced math blocks for all eleven display equations to preserve TeX braces, spacing and norm symbols through Markdown parsing."
+    ],
+    "verification": "Live GitHub issue: all 70 math expressions rendered as MathML, zero math errors; display equations inspected for preserved braces and double-bar norms; posted body matches local source.",
+    "scientific_change": false,
+    "pdf_sha256": "f6a2d34a0cbaf94501db84961f8015bc2386cddc38a1df40bdaa3f9da1844827",
+    "formatting_reference": "https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions"
+  }
 }

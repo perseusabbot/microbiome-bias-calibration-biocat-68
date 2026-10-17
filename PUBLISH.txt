@@ -17,3 +17,10 @@ The posted issue body was verified against github-submission.txt.
 The public scientific archive was downloaded and every manifest hash verified.
 See publication.json for the scientific revision and publication details.
 Do not create a duplicate submission if an issue URL is already present.
+
+Formatting patch v2.0.1 fixes GitHub issue math rendering. Six unsupported
+operatorname commands use mathrm; eleven display equations use fenced math
+blocks to preserve braces, spacing, and norm symbols. All 70 expressions
+rendered without errors in the live issue. PDF, scientific code, data, and
+results are unchanged. The original scientific snapshot remains available.
+Release: https://github.com/perseusabbot/microbiome-bias-calibration-biocat-68/releases/tag/v2.0.1

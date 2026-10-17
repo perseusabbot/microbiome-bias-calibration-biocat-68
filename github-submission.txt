@@ -26,18 +26,26 @@ The complete source package accompanying this submission contains the report sou
 
 Let $r$ be a known calibration composition with every $r_i>0$, $b_i>0$ shared taxon efficiencies, and $p$ an unknown target composition, possibly with zeros. Assume
 
-$$C\sim\operatorname{Mult}(M,\sigma),\quad Y\sim\operatorname{Mult}(N,\rho),\qquad
-\sigma_i=\frac{b_ir_i}{\sum_jb_jr_j},\quad \rho_i=\frac{b_ip_i}{\sum_jb_jp_j}.$$
+```math
+C\sim\mathrm{Mult}(M,\sigma),\quad Y\sim\mathrm{Mult}(N,\rho),\qquad
+\sigma_i=\frac{b_ir_i}{\sum_jb_jr_j},\quad \rho_i=\frac{b_ip_i}{\sum_jb_jp_j}.
+```
 
 Then $p_i\propto r_i\rho_i/\sigma_i$. For each binomial marginal, invert
 
-$$n\,d(k/n\Vert t)\leq\log(4q/\alpha),\qquad
-d(x\Vert t)=x\log(x/t)+(1-x)\log((1-x)/(1-t)).$$
+```math
+n\,d(k/n\Vert t)\leq\log(4q/\alpha),\qquad
+d(x\Vert t)=x\log(x/t)+(1-x)\log((1-x)/(1-t)).
+```
 
 Write the resulting bounds as $[l_i^Y,u_i^Y]$ and $[l_i^C,u_i^C]$, and set
 
-$$a_i=r_i l_i^Y/u_i^C,\qquad A_i=r_i u_i^Y/l_i^C,$$
-$$L_i=\frac{a_i}{a_i+\sum_{j\ne i}A_j},\qquad U_i=\frac{A_i}{A_i+\sum_{j\ne i}a_j}.$$
+```math
+a_i=r_i l_i^Y/u_i^C,\qquad A_i=r_i u_i^Y/l_i^C,
+```
+```math
+L_i=\frac{a_i}{a_i+\sum_{j\ne i}A_j},\qquad U_i=\frac{A_i}{A_i+\sum_{j\ne i}a_j}.
+```
 
 If a calibration lower bound is zero, take the corresponding upper weight as infinity and use the appropriate limits. For a single taxon return $[1,1]$. This gives simultaneous coverage of at least $1-\alpha$ for all taxa of one target sample under the model.
 
@@ -45,15 +53,19 @@ Proof: applying Markov's inequality to the binomial moment-generating function a
 
 For any simplex point estimate $\widehat p$, an exact radius over the outer interval box intersected with the simplex is
 
-$$\varepsilon_B=2\max_{S\subseteq\{1,\ldots,q\}}
+```math
+\varepsilon_B=2\max_{S\subseteq\{1,\ldots,q\}}
 \left[\min\left\{\sum_{i\in S}U_i,1-\sum_{i\notin S}L_i\right\}
--\sum_{i\in S}\widehat p_i\right].$$
+-\sum_{i\in S}\widehat p_i\right].
+```
 
 Indeed L1 distance between simplex points is twice the maximum excess mass on a subset. The largest feasible mass on a subset is the smaller of its upper capacity and the mass remaining after the complement's lower requirements. This also gives a simultaneous L1 certificate under the same model. Enumeration is implemented only up to 12 taxa.
 
 If target efficiencies are $b_i d_i$ with an externally valid bound $\max_i\log d_i-\min_i\log d_i\leq R$, correcting with $b$ identifies $p_i^*\propto p_i d_i$. The sharp deterministic bound is
 
-$$\|p^*-p\|_1\leq 2\tanh(R/4).$$
+```math
+\|p^*-p\|_1\leq 2\tanh(R/4).
+```
 
 Proof: rescale drift to $[1,H]$, $H=e^R$, and let $m=\sum_i p_i d_i$. L1 discrepancy is $E_p|d-m|/m$. Convexity maximizes its expectation at endpoint drifts, giving $2(m-1)(H-m)/[m(H-1)]$. The maximum occurs at $m=\sqrt H$, with value $2(\sqrt H-1)/(\sqrt H+1)$. Two endpoint taxa with masses $\sqrt H/(1+\sqrt H)$ and $1/(1+\sqrt H)$ attain equality. This bound does not estimate or justify $R$ from unpaired unknown samples.
 
@@ -80,12 +92,16 @@ Contamination alone is insufficient. For each co-present taxon pair, compare the
 
 For plate $\ell(s)$, define
 
-$$\mu_s=(1-\eta)\frac{b_{\ell(s)}\odot p_s}{\sum_jb_{\ell(s),j}p_{s,j}}+\eta h,$$
-$$Z_s\sim\operatorname{Dirichlet}(\kappa\mu_s),\qquad Y_s\mid Z_s\sim\operatorname{Mult}(N_s,Z_s).$$
+```math
+\mu_s=(1-\eta)\frac{b_{\ell(s)}\odot p_s}{\sum_jb_{\ell(s),j}p_{s,j}}+\eta h,
+```
+```math
+Z_s\sim\mathrm{Dirichlet}(\kappa\mu_s),\qquad Y_s\mid Z_s\sim\mathrm{Mult}(N_s,Z_s).
+```
 
 This is a contaminated Dirichlet-multinomial (DM) measurement model. Its variance is $N\mu_i(1-\mu_i)(N+\kappa)/(1+\kappa)$. The latent $Z_s$ represents variation in read probabilities, not separately identifiable biological variation. A contamination-only comparator uses $Z_s=\mu_s$ and multinomial counts.
 
-Fit six log efficiency ratios per plate, a shared contamination fraction and six log contamination-profile ratios, plus one shared log concentration for DM. Fix the seventh taxon's efficiency to one. Bounds: log ratios in [-12,12], $\eta=0.2\operatorname{sigmoid}(t)$ for $t\in[-16,8]$, and $\kappa\in[1,10^7]$. Optimize the exact marginal likelihood with L-BFGS-B and analytic gradients; use two starts for primary fits. No primary fit hits a bound. Numerical mean-Jacobian rank is 19 at the checked interior starting point of every training design; this is local numerical evidence, not proof of global identifiability or optimization.
+Fit six log efficiency ratios per plate, a shared contamination fraction and six log contamination-profile ratios, plus one shared log concentration for DM. Fix the seventh taxon's efficiency to one. Bounds: log ratios in [-12,12], $\eta=0.2\mathrm{sigmoid}(t)$ for $t\in[-16,8]$, and $\kappa\in[1,10^7]$. Optimize the exact marginal likelihood with L-BFGS-B and analytic gradients; use two starts for primary fits. No primary fit hits a bound. Numerical mean-Jacobian rank is 19 at the checked interior starting point of every training design; this is local numerical evidence, not proof of global identifiability or optimization.
 
 Validation: use five fixed folds, grouping identical nominal support sets across plates. Keep both full-support controls in every training set. Each fold trains on 64 or 65 samples and predicts 15 or 16. Metadata determine the split; held-out nominal outcomes are used only for scoring. The predictor sees the held-out count vector and plate, not its nominal support mask. The extension plan was fixed before model fitting but after the original dataset had been examined, so this is exploratory validation.
 
@@ -95,20 +111,26 @@ For each DM fold, generate 100 fixed-design parametric bootstrap training count 
 
 Suppose $b,\eta,h,\kappa$ are known, with positive efficiencies, $0<\eta<1$, full-support $h$, and $\kappa>0$. This is a conditional theorem, not a guarantee for the fitted procedure.
 
-Allocate $\alpha/(4q)$ to each tail of two stages. First obtain simultaneous binomial KL intervals for $Z_i$ conditional on the observed counts. Second invert the marginal distribution $Z_i\sim\operatorname{Beta}(\kappa\mu_i,\kappa(1-\mu_i))$: the lower mean endpoint solves
+Allocate $\alpha/(4q)$ to each tail of two stages. First obtain simultaneous binomial KL intervals for $Z_i$ conditional on the observed counts. Second invert the marginal distribution $Z_i\sim\mathrm{Beta}(\kappa\mu_i,\kappa(1-\mu_i))$: the lower mean endpoint solves
 
-$$\Pr_{\mu=L_\mu}(Z_i\geq L_Z)=\alpha/(4q),$$
+```math
+\Pr_{\mu=L_\mu}(Z_i\geq L_Z)=\alpha/(4q),
+```
 
 and the upper solves
 
-$$\Pr_{\mu=U_\mu}(Z_i\leq U_Z)=\alpha/(4q).$$
+```math
+\Pr_{\mu=U_\mu}(Z_i\leq U_Z)=\alpha/(4q).
+```
 
 Use zero and one boundary conventions. For fixed $\kappa$ the Beta family is stochastically increasing in its mean: a larger-mean density divided by a smaller-mean density is proportional to a positive power of $z/(1-z)$. Thus both inverse endpoints increase with their observed argument. On the count event, using $L_Z,U_Z$ instead of the actual $Z_i$ expands the direct Beta interval. Count-stage failure probability is at most $\alpha/2$, and the Beta-stage union failure probability is at most $\alpha/2$. Their union proves simultaneous mean coverage at least $1-\alpha$; coordinate independence is unnecessary.
 
 Convert to clean read-space bounds
 
-$$l_i=\max\{0,(L_{\mu,i}-\eta h_i)/(1-\eta)\},\quad
-u_i=\min\{1,(U_{\mu,i}-\eta h_i)/(1-\eta)\}.$$
+```math
+l_i=\max\{0,(L_{\mu,i}-\eta h_i)/(1-\eta)\},\quad
+u_i=\min\{1,(U_{\mu,i}-\eta h_i)/(1-\eta)\}.
+```
 
 Divide by $b_i$ and use the normalized-weight formulas in section 1. If any $l_i>u_i$, $\sum l_i>1$, or $\sum u_i<1$, explicitly return an empty set and count it as noncontainment. For the multinomial comparator omit the Beta stage and allocate $\alpha/(2q)$ to count tails.
 
