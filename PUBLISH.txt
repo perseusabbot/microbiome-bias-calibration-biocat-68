@@ -11,5 +11,9 @@ New text is licensed CC BY 4.0; new software Apache-2.0.
 The original data retain their upstream MIT license and attribution.
 The GitHub authorization is limited to public repositories.
 
-See publication.json for the verified issue URL and current status.
+Published issue: https://github.com/We-Solve/research/issues/3
+Public source repository: https://github.com/perseusabbot/microbiome-bias-calibration-biocat-68
+The posted issue body was verified against github-submission.txt.
+The public scientific archive was downloaded and every manifest hash verified.
+See publication.json for the scientific revision and publication details.
 Do not create a duplicate submission if an issue URL is already present.

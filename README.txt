@@ -32,7 +32,7 @@ is not required for reproduction outside the app.
 
 File map:
   report.pdf                    Updated 16-page report: findings, proofs, limits
-  github-submission.txt         Complete Markdown issue body for BIOCAT-68
+  github-submission.txt         Exact submitted Markdown issue body for BIOCAT-68
   publication.json              Actual GitHub publication state and URLs
   PUBLISH.txt                   Publication record and submission information
   code/extended_model.py        Contaminated multinomial and DM model
@@ -134,7 +134,8 @@ reproduction audit is retained. Use results/extension/reproduction_check.json
 and results/reproduction_check.json to inspect the actual hash comparisons.
 
 GitHub repository: https://github.com/perseusabbot/microbiome-bias-calibration-biocat-68
-See publication.json for the current issue-submission state.
+Submitted contribution: https://github.com/We-Solve/research/issues/3
+The issue is open; no editorial acceptance is claimed.
 The issue draft includes user-confirmed submitter declarations,
 complete methods/proofs, source references, and truthful contributor/model
 disclosure. The user confirmed all declarations and authorized public-repository access.
