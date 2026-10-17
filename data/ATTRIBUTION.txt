@@ -1,0 +1,32 @@
+Empirical inputs are unmodified CSVs from Michael R. McLaren's metacal:
+https://github.com/mikemc/metacal
+Commit: f56792d02bd722ab16c1ed215b07c1187829a226
+Paths: inst/extdata/brooks2015-actual.csv,
+       inst/extdata/brooks2015-observed.csv,
+       inst/extdata/brooks2015-sample-data.csv
+Retrieved: 2026-10-17.
+The repository's MIT license and package description are included as
+LICENSE.md and DESCRIPTION. This credit does not transfer authorship of
+our analysis to the data creators or imply their endorsement.
+
+Original experiment:
+Brooks JP, Edwards DJ, Harwich MD Jr, et al. (2015).
+The truth about metagenomics: quantifying and counteracting bias in 16S
+rRNA studies. BMC Microbiology 15:66.
+https://doi.org/10.1186/s12866-015-0351-6
+
+Data collation and multiplicative calibration framework:
+McLaren MR, Willis AD, Callahan BJ (2019).
+Consistent and correctable bias in metagenomic sequencing experiments.
+eLife 8:e46923. https://doi.org/10.7554/eLife.46923
+
+Analysis transformations: retain seven named taxa; exclude the Other
+category and condition depth on retained reads. Do not remove reads from
+nominally absent named taxa. Use the unique seven-taxon mixture on each
+plate as calibration and the other 39 mixtures on that plate as targets.
+Nominal actual compositions are normalized to sum to one. No raw FASTQ
+files, additional personal data, or independent measurements are used.
+
+The source problem and its existing attempt are credited to we-solve and
+its listed contributors. Their results are summarized and cited, not
+represented as work newly discovered by this project.

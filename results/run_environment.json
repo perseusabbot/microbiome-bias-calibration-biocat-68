@@ -1,0 +1,10 @@
+{
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "rng": "NumPy PCG64",
+  "seed": 20261017,
+  "reps": 10000,
+  "alpha": 0.05,
+  "scenario_seed_rule": "base seed + zero-based scenario index",
+  "command": "python code/experiments.py --reps 10000 --seed 20261017"
+}

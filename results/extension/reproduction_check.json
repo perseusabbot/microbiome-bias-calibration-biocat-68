@@ -1,0 +1,91 @@
+{
+  "method": "Independent execution in a clean directory containing copied source, bundled data, and the original empirical diagnostic table used by the extension",
+  "files": [
+    {
+      "file": "bootstrap_refits.json",
+      "sha256": "9479d5d8de1190cfcb4332050d743bff92e54d4ee914b3cdda4b7d56c6f3ff37",
+      "clean_copy_sha256": "9479d5d8de1190cfcb4332050d743bff92e54d4ee914b3cdda4b7d56c6f3ff37",
+      "identical": true
+    },
+    {
+      "file": "diagnosis.json",
+      "sha256": "aa8e57692093e40c414cf3dbb2d9b70b1db573951c7389c452eba206ed356d13",
+      "clean_copy_sha256": "aa8e57692093e40c414cf3dbb2d9b70b1db573951c7389c452eba206ed356d13",
+      "identical": true
+    },
+    {
+      "file": "diagnostic_logratios.csv",
+      "sha256": "bdd68edc4c83002872371892784a377345f719467b8a11da6c79208a8e478d4d",
+      "clean_copy_sha256": "bdd68edc4c83002872371892784a377345f719467b8a11da6c79208a8e478d4d",
+      "identical": true
+    },
+    {
+      "file": "diagnostic_samples.csv",
+      "sha256": "ecb58d7485f072f42f8ebfd1c5f54f97e50c1cc53dcb123f6cbd0a00bb26705a",
+      "clean_copy_sha256": "ecb58d7485f072f42f8ebfd1c5f54f97e50c1cc53dcb123f6cbd0a00bb26705a",
+      "identical": true
+    },
+    {
+      "file": "environment.json",
+      "sha256": "77890e5088cf62cb2df15a3c333cf53ca0d2fc73352b55921955c1e133b2e2ad",
+      "clean_copy_sha256": "77890e5088cf62cb2df15a3c333cf53ca0d2fc73352b55921955c1e133b2e2ad",
+      "identical": true
+    },
+    {
+      "file": "fits.json",
+      "sha256": "c8598bf13ff6fc3d624fd531d2be12c401304bc99886a6ee25934e20c61cfcba",
+      "clean_copy_sha256": "c8598bf13ff6fc3d624fd531d2be12c401304bc99886a6ee25934e20c61cfcba",
+      "identical": true
+    },
+    {
+      "file": "folds.csv",
+      "sha256": "9810a6112f538785c5386eadbb9bb1746d0232f0e05cfcd85851d1bd7b433d3b",
+      "clean_copy_sha256": "9810a6112f538785c5386eadbb9bb1746d0232f0e05cfcd85851d1bd7b433d3b",
+      "identical": true
+    },
+    {
+      "file": "simulation_known_counts.csv",
+      "sha256": "16ad0727c5c34a2791e9a9cedb2e06bad914701325a706b48e22b13a320539b6",
+      "clean_copy_sha256": "16ad0727c5c34a2791e9a9cedb2e06bad914701325a706b48e22b13a320539b6",
+      "identical": true
+    },
+    {
+      "file": "simulation_refits.json",
+      "sha256": "7fc84270459762f6cf54c931b1af793fff399e1886e3338cc06fc59637c9907d",
+      "clean_copy_sha256": "7fc84270459762f6cf54c931b1af793fff399e1886e3338cc06fc59637c9907d",
+      "identical": true
+    },
+    {
+      "file": "simulation_summary.csv",
+      "sha256": "25043311ee28b76f2ebf4e4b0433ff1d1c2a9013714097001cb89e307f7c33ae",
+      "clean_copy_sha256": "25043311ee28b76f2ebf4e4b0433ff1d1c2a9013714097001cb89e307f7c33ae",
+      "identical": true
+    },
+    {
+      "file": "validation_intervals.csv",
+      "sha256": "57954a548d22235d600a5c89c81b0f569592b43480bba4700479c610d0aa5964",
+      "clean_copy_sha256": "57954a548d22235d600a5c89c81b0f569592b43480bba4700479c610d0aa5964",
+      "identical": true
+    },
+    {
+      "file": "validation_samples.csv",
+      "sha256": "9bd7f5a0d15350c9b915d50beb6fe5ba6fc6d5937b635493bf896fdb4e628bb2",
+      "clean_copy_sha256": "9bd7f5a0d15350c9b915d50beb6fe5ba6fc6d5937b635493bf896fdb4e628bb2",
+      "identical": true
+    },
+    {
+      "file": "validation_summary.json",
+      "sha256": "ececd767b8d1f384832f660795e4421f8a1958a05db7c24ab8fc22a088a882b8",
+      "clean_copy_sha256": "ececd767b8d1f384832f660795e4421f8a1958a05db7c24ab8fc22a088a882b8",
+      "identical": true
+    },
+    {
+      "file": "verification.json",
+      "sha256": "69651544efcbbf837e077bfa6cb506cd64f3cd140b3fae0ce7524bd80939cb69",
+      "clean_copy_sha256": "69651544efcbbf837e077bfa6cb506cd64f3cd140b3fae0ce7524bd80939cb69",
+      "identical": true
+    }
+  ],
+  "all_identical": true,
+  "scope": "Same host and pinned numerical environment; cross-platform byte equality is not promised."
+}

@@ -1,0 +1,19 @@
+{
+  "pdf_sha256": "f6a2d34a0cbaf94501db84961f8015bc2386cddc38a1df40bdaa3f9da1844827",
+  "document_properties": {
+    "/Author": "Codex",
+    "/CreationDate": "D:20000101000000+00'00'",
+    "/Creator": "(unspecified)",
+    "/Keywords": "",
+    "/ModDate": "D:20000101000000+00'00'",
+    "/Producer": "ReportLab PDF Library - (opensource)",
+    "/Subject": "BIO-300 scoped contribution; assumptions, proofs, simulations and public-data stress test",
+    "/Title": "Microbiome bias calibration: a reproducible finite-sample study",
+    "/Trapped": "/False"
+  },
+  "has_xmp": false,
+  "attachments": [],
+  "checks": "Document properties, extracted text, resolved PDF strings, and decoded streams checked for user name, email addresses, and local user-directory paths.",
+  "personal_identifiers_found": false,
+  "scope": "The delivered PDF only; this is a targeted inspection, not a formal anonymization proof."
+}

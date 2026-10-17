@@ -1,0 +1,11 @@
+{
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.16.3",
+  "seed": 20261018,
+  "bootstrap": 100,
+  "known_reps": 10000,
+  "refit_reps": 300,
+  "split": "grouped nominal support",
+  "optimizer": "L-BFGS-B analytic gradient"
+}

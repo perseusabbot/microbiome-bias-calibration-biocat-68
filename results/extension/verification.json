@@ -1,0 +1,18 @@
+{
+  "exact_parameter_cases": 32,
+  "exact_max_failure_alpha_point2": 0.010131619346049765,
+  "gradient_relative_mn": 1.0861767247326869e-07,
+  "gradient_relative_dm": 3.951781811955968e-07,
+  "mean_jacobian_ranks_at_start": [
+    19,
+    19,
+    19,
+    19,
+    19
+  ],
+  "identification_limit": "Local numerical rank only, not proof of global identifiability.",
+  "tests": 8,
+  "failures": 0,
+  "errors": 0,
+  "passed": true
+}

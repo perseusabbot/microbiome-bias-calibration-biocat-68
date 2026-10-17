@@ -1,0 +1,19 @@
+{
+  "status": "repository_created_package_and_issue_pending",
+  "destination": "https://github.com/we-solve/research/issues",
+  "issue_title": "Attempt: BIOCAT-68",
+  "issue_body_file": "github-submission.txt",
+  "submission_kind": "Partial result",
+  "blocker": null,
+  "required_before_posting": [
+    "Publish or attach the reproducibility package and include its verified public link in the issue body",
+    "Post the issue and verify its returned URL"
+  ],
+  "issue_url": null,
+  "repository_url": "https://github.com/perseusabbot/microbiome-bias-calibration-biocat-68",
+  "source_form": "https://raw.githubusercontent.com/we-solve/research/main/.github/ISSUE_TEMPLATE/attempt.yml",
+  "license_intent": "CC BY 4.0 for new report text; Apache-2.0 for new software, confirmed by the user. Bundled third-party data retain their MIT notice.",
+  "declarations_confirmed_by_user": true,
+  "github_account": "perseusabbot",
+  "oauth_scope": "public_repo"
+}

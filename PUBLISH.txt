@@ -1,0 +1,15 @@
+GITHUB PUBLICATION RECORD
+
+Repository: https://github.com/perseusabbot/microbiome-bias-calibration-biocat-68
+Submission destination: https://github.com/We-Solve/research/issues
+Title: Attempt: BIOCAT-68
+Body: github-submission.txt
+Claim: Partial result, not a complete solution or novelty claim.
+
+All three issue-form declarations were expressly confirmed by the user.
+New text is licensed CC BY 4.0; new software Apache-2.0.
+The original data retain their upstream MIT license and attribution.
+The GitHub authorization is limited to public repositories.
+
+See publication.json for the verified issue URL and current status.
+Do not create a duplicate submission if an issue URL is already present.

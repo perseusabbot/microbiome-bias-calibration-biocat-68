@@ -1,0 +1,16 @@
+[
+  "C\\sim\\mathrm{Mult}(M,\\sigma),\\quad Y\\sim\\mathrm{Mult}(N,\\rho),\\quad \\sigma_i=\\frac{b_i r_i}{\\sum_j b_jr_j},\\quad \\rho_i=\\frac{b_i p_i}{\\sum_j b_jp_j}",
+  "p_i=\\frac{r_i\\rho_i/\\sigma_i}{\\sum_j r_j\\rho_j/\\sigma_j}",
+  "d(x\\Vert t)=x\\log\\frac{x}{t}+(1-x)\\log\\frac{1-x}{1-t},\\qquad n\\,d(x\\Vert t)\\leq\\kappa",
+  "a_i=\\frac{r_i l_i^Y}{u_i^C},\\quad A_i=\\frac{r_i u_i^Y}{l_i^C},\\quad L_i=\\frac{a_i}{a_i+\\sum_{j\\ne i}A_j},\\quad U_i=\\frac{A_i}{A_i+\\sum_{j\\ne i}a_j}",
+  "\\Pr\\{L_i\\leq p_i\\leq U_i\\ \\mathrm{for\\ all}\\ i\\}\\ \\geq\\ 1-\\alpha",
+  "\\widehat p_i\\ \\propto\\ r_i\\frac{Y_i+1/2}{C_i+1/2},\\qquad \\sum_i\\widehat p_i=1",
+  "\\varepsilon_B=2\\max_{S\\subseteq\\{1,\\ldots,q\\}}\\left[\\min\\left\\{\\sum_{i\\in S}U_i,1-\\sum_{j\\notin S}L_j\\right\\}-\\sum_{i\\in S}\\widehat p_i\\right]",
+  "\\Pr\\{\\|\\widehat p-p\\|_1\\leq\\varepsilon_B\\}\\geq1-\\alpha",
+  "\\max_i\\log d_i-\\min_i\\log d_i\\leq R\\quad\\Longrightarrow\\quad\\|p^*-p\\|_1\\leq2\\tanh(R/4)",
+  "L_i^{(R)}=\\frac{L_i}{L_i+e^R(1-L_i)},\\qquad U_i^{(R)}=\\frac{e^R U_i}{1-U_i+e^R U_i}",
+  "\\mu_s=(1-\\eta)\\,\\frac{b_{\\ell(s)}\\odot p_s}{\\sum_j b_{\\ell(s),j}p_{s,j}}+\\eta h",
+  "Z_s\\sim\\mathrm{Dirichlet}(\\kappa\\mu_s),\\qquad Y_s\\mid Z_s\\sim\\mathrm{Mult}(N_s,Z_s)",
+  "\\Pr_{\\mu=L_\\mu}\\{Z_i\\geq L_Z\\}=\\frac{\\alpha}{4q},\\qquad \\Pr_{\\mu=U_\\mu}\\{Z_i\\leq U_Z\\}=\\frac{\\alpha}{4q}",
+  "l_i=\\max\\{0,(L_{\\mu,i}-\\eta h_i)/(1-\\eta)\\},\\quad u_i=\\min\\{1,(U_{\\mu,i}-\\eta h_i)/(1-\\eta)\\}"
+]

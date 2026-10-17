@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "method": "Fresh directory containing only copied code and data; reran verification and all 140000 simulations plus empirical analysis; compared SHA-256 of resulting files. Same Python/NumPy installation and hardware, not an independent environment.",
+  "files": [
+    {
+      "file": "results/empirical_intervals.csv",
+      "match": true,
+      "sha256": "f618893483f75c99b94ac78d36e2b788b2c8077440b64408c3967a957132b6b8"
+    },
+    {
+      "file": "results/empirical_samples.csv",
+      "match": true,
+      "sha256": "8415a3b203c07d7483eeef1f44ec770b9c0180b3c00bca452b96c265d383ecd9"
+    },
+    {
+      "file": "results/empirical_summary.json",
+      "match": true,
+      "sha256": "9b0c883ee2a39bc01a97240e54ecc05e2cb19b96b472712c79f2722211c4d757"
+    },
+    {
+      "file": "results/run_environment.json",
+      "match": true,
+      "sha256": "3b4182c6003c3575eba0f3114de7ada8eb56ae3d4d34d94d2f8011302f14454a"
+    },
+    {
+      "file": "results/simulation_replicates.csv",
+      "match": true,
+      "sha256": "0eb31cd63eada12eb53310d1233f51bb20d52b1854472a60d7c60195fba0d7c0"
+    },
+    {
+      "file": "results/simulation_summary.csv",
+      "match": true,
+      "sha256": "e4a009aa6a49c067a9e31f2b43a367fe62d6a7c2a4935528ee7cac59ec700319"
+    },
+    {
+      "file": "results/verification.json",
+      "match": true,
+      "sha256": "eaece20816795b2eb7eadfb6b3a1790f7ed754fe3afc844829b26910da1b5486"
+    }
+  ]
+}

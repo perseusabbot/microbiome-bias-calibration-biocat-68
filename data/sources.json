@@ -1,0 +1,67 @@
+{
+  "retrieved": "2026-10-17",
+  "literature_scope": "Targeted primary-source check, not an exhaustive novelty or current-status audit",
+  "references": [
+    {
+      "id": "S0",
+      "title": "we-solve BIO-300 statement and attempt",
+      "url": "https://we-solve.github.io/problems/bias-calibrated-microbiome-abundance-inference-393f843b/",
+      "access_and_limit": "Full page read; existing connected-comparison identification and deterministic log-error bound. Current page refreshed. No independently verified open-status claim."
+    },
+    {
+      "id": "S1",
+      "title": "McLaren, Willis and Callahan (2019), eLife 8:e46923",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6739870/",
+      "access_and_limit": "Primary article sections on the multiplicative bias model, uncertainty limitations, and public data. No exhaustive literature review."
+    },
+    {
+      "id": "S2",
+      "title": "metacal calibration tutorial",
+      "url": "https://mikemc.github.io/metacal/articles/tutorial.html",
+      "access_and_limit": "Author documentation; deterministic correction does not propagate count and bias-estimation uncertainty."
+    },
+    {
+      "id": "S3",
+      "title": "McLaren (2021), Estimating bias from mock communities using fido",
+      "url": "https://microbiomemeasurement.org/posts/bias-estimation-from-mocks-with-fido/",
+      "access_and_limit": "Author tutorial; count-noise modeling and known-support data processing. This report does not run fido."
+    },
+    {
+      "id": "S4",
+      "title": "Clausen and Willis, arXiv:2204.12733v2 (2025 revision)",
+      "url": "https://arxiv.org/html/2204.12733v2",
+      "access_and_limit": "Primary paper abstract, model and inference scope checked. Broader semiparametric measurement-error and contamination inference already exists. No priority claim."
+    },
+    {
+      "id": "S5",
+      "title": "Brooks et al. (2015), BMC Microbiology 15:66",
+      "url": "https://doi.org/10.1186/s12866-015-0351-6",
+      "access_and_limit": "Original experiment and prescribed cell-mixture design; public processed count tables used, no raw read reprocessing."
+    },
+    {
+      "id": "S6",
+      "title": "metacal source at pinned revision",
+      "url": "https://github.com/mikemc/metacal/tree/f56792d02bd722ab16c1ed215b07c1187829a226",
+      "access_and_limit": "Three raw CSV inputs, license and package metadata downloaded. Exact revision fixed before analysis."
+    },
+    {
+      "id": "S7",
+      "title": "Silverman et al. (2021), Measuring and mitigating PCR bias in microbiota datasets",
+      "url": "https://doi.org/10.1371/journal.pcbi.1009113",
+      "access_and_limit": "Primary methods context for models of PCR bias and counting noise; no head-to-head benchmark here."
+    }
+  ],
+  "empirical_commit": "f56792d02bd722ab16c1ed215b07c1187829a226",
+  "input_sha256": {
+    "brooks2015-actual.csv": "7d0434335afa863626af57b498877deaf75c18df570d72906c0634c21f97351e",
+    "brooks2015-observed.csv": "9341a82d6195af25b0eb9f460b1efc3169a33d818c5910947b02b9e01c808761",
+    "brooks2015-sample-data.csv": "2e9a9049d1137230ffc0a24185dec6747fd8a2f42aaa770dd13f1b2bac682507"
+  },
+  "problem_page_sha256": "2ab44bc7b3090529ff651b51f99583d3d421f14966f26f42c65a66deaea024a3",
+  "extension_sources": {
+    "problem_prompt": "https://we-solve.github.io/prompts/BIOCAT-68.txt",
+    "issue_form": "https://raw.githubusercontent.com/we-solve/research/main/.github/ISSUE_TEMPLATE/attempt.yml",
+    "access_date": "2026-10-17",
+    "note": "BIOCAT-68 stable handle verified in the original page and downloaded prompt. Form requires text/TeX write-up, partial-result scope, contributor disclosure and submitter declarations."
+  }
+}

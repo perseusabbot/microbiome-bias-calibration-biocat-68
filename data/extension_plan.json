@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "status": "Exploratory extension after inspection of the original dataset; fixed before fitting the new models, not a preregistration",
+  "seed": 20261018,
+  "alpha": 0.05,
+  "folds": 5,
+  "split": "Group identical nominal support sets across plates; full-support controls always in training; shuffle groups with PCG64 seed then greedy balance sample counts",
+  "models": ["contaminated_multinomial", "contaminated_dirichlet_multinomial"],
+  "mean": "mu_s=(1-eta)*normalize(b_plate*p_s)+eta*h",
+  "parameters": "Six log efficiency ratios per plate, shared contamination fraction eta and six log contamination ratios; DM adds shared concentration kappa",
+  "bounds": "log efficiency and contamination ratios [-12,12]; 0<eta<0.2 via 0.2*sigmoid; kappa in [1,10000000]",
+  "heldout_inference": "Unknown seven-taxon composition; no nominal support mask. Invert simultaneous count and beta intervals, subtract fitted contamination and divide by fitted efficiency",
+  "nuisance_bootstrap": "100 parametric fixed-design training refits per fold for the DM model; envelope across every refit plus original fit; sensitivity envelope, no claimed 95% nuisance confidence set",
+  "known_parameter_reps": 10000,
+  "refit_reps": 300,
+  "metrics": ["all-taxon containment of nominal composition", "mean interval width", "median L1 point error", "heldout log probability of counts at nominal composition", "empty interval boxes", "optimizer convergence"],
+  "limits": "Two plates from one experiment, nominal rather than remeasured truths, fixed mixtures and shared fits; no independent validation of general coverage or biological cause of stray reads. No novelty or complete BIOCAT-68 solution claim."
+}

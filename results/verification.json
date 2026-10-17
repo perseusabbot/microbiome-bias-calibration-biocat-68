@@ -1,0 +1,17 @@
+{
+  "drift_sharpness_max_error": 1.4311468676808659e-16,
+  "random_drift_trials": 1000,
+  "exact_binomial_parameter_cases": 406,
+  "max_exact_binomial_failure_at_nominal_0p02": 0.009480115604992942,
+  "exact_joint_parameter_cases": 18,
+  "outcomes_per_joint_case": 546,
+  "minimum_exact_joint_coverage_at_nominal_0p80": 0.9996787785901045,
+  "inverse_identity_trials": 200,
+  "l1_vertex_enumeration_trials": 100,
+  "normalization_corner_trials": 100,
+  "test_methods": 12,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "scope": "Independent numerical checks, not machine-checked proofs"
+}

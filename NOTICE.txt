@@ -1,0 +1,29 @@
+MICROBIOME BIAS CALIBRATION STUDY, VERSION 2
+
+The submitting user confirmed publication under the following licenses:
+
+* New Python software in code/: Apache License, Version 2.0.
+  See LICENSE-CODE.txt.
+* New report text, issue write-up, figures, documentation, and research
+  outputs: Creative Commons Attribution 4.0 International.
+  See LICENSE-REPORT.txt.
+* Third-party processed input data and metacal metadata in data/ retain
+  the upstream MIT notice in data/LICENSE.md. They are not relicensed.
+  See data/ATTRIBUTION.txt and data/sources.json for exact provenance.
+
+The study, code, proofs, computational checks and report were generated
+through Codex, an OpenAI GPT-6-based assistant (exact version unknown), at
+the requesting user's direction. The user selected the research problem,
+requested the extension and publication, and confirmed the issue-form
+declarations. No independent human scientific review was performed.
+
+Original experimental work: Brooks et al. (2015), BMC Microbiology 15:66.
+Processed data and multiplicative-bias framework: McLaren and collaborators.
+Upstream metacal revision: f56792d02bd722ab16c1ed215b07c1187829a226.
+All cited publications retain their own authorship and rights.
+
+Suggested attribution for this contribution:
+Microbiome bias calibration study, version 2 (2026), prepared with Codex;
+submitted under BIOCAT-68. See publication.json for actual public URLs and
+the submission for contributor disclosure. This is a partial methodological
+study with explicit limitations, not a complete solution or novelty claim.

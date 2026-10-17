@@ -1,0 +1,28 @@
+{
+  "dataset": "Brooks2015 cells from metacal",
+  "calibrators": {
+    "1": "s1-23",
+    "2": "s2-14"
+  },
+  "n_held_out": 78,
+  "taxa": [
+    "Atopobium_vaginae",
+    "Gardnerella_vaginalis",
+    "Lactobacillus_crispatus",
+    "Lactobacillus_iners",
+    "Prevotella_bivia",
+    "Sneathia_amnii",
+    "Streptococcus_agalactiae"
+  ],
+  "n_all_taxa_cover_nominal": 4,
+  "n_present_taxa_cover_nominal": 35,
+  "n_samples_with_absent_taxon_reads": 71,
+  "absent_taxon_reads": 1287,
+  "retained_reads": 1313341,
+  "excluded_other_reads": 598,
+  "median_l1_raw": 0.637087668891646,
+  "median_l1_corrected": 0.1261355565530185,
+  "mean_interval_width": 0.05616202364906426,
+  "n_l1_certificates_cover_nominal": 52,
+  "interpretation": "Model stress test against nominal mixtures; not a coverage estimate from independent replications."
+}

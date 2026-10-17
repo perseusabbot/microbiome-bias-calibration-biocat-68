@@ -1,0 +1,19 @@
+{
+  "n": 78,
+  "cross_table": {
+    "present_0_absent_reads_0": 3,
+    "present_0_absent_reads_1": 40,
+    "present_1_absent_reads_0": 4,
+    "present_1_absent_reads_1": 31
+  },
+  "n_stray_reads": 71,
+  "total_stray_reads": 1287,
+  "fraction_all_reads_stray": 0.0009799435180962142,
+  "samples_only_absence_prevents_containment": 31,
+  "samples_present_fail": 43,
+  "sample_median_absent_fraction": 0.0003045448372981784,
+  "n_logratios": 160,
+  "fraction_logratios_abs_z_gt3": 0.54375,
+  "median_abs_logratio_error": 0.22977133404696826,
+  "interpretation": "Descriptive dependent residuals against nominal truths; delta approximation includes calibration counts. No independent hypothesis tests or causal attribution."
+}

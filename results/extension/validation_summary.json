@@ -1,0 +1,29 @@
+[
+  {
+    "model": "mn",
+    "n": 78,
+    "contains_nominal": 11,
+    "empty": 33,
+    "mean_width_nonempty": 0.021909897458985417,
+    "median_l1": 0.08006792994569403,
+    "total_log_probability": -9704.07608637138
+  },
+  {
+    "model": "dm",
+    "n": 78,
+    "contains_nominal": 74,
+    "empty": 0,
+    "mean_width_nonempty": 0.162501382908123,
+    "median_l1": 0.07748543735194839,
+    "total_log_probability": -1543.635604326344
+  },
+  {
+    "model": "dm_bootstrap_envelope",
+    "n": 78,
+    "contains_nominal": 77,
+    "empty": 0,
+    "mean_width_nonempty": 0.1892494745263649,
+    "median_l1": 0.07748543735194839,
+    "total_log_probability": -1543.635604326344
+  }
+]
